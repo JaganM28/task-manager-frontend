@@ -1,0 +1,114 @@
+/* Filepath: src/index.css */
+
+/* Basic Reset and Global Font */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f4f5f7; /* A light gray background like Trello */
+}
+
+/* Auth Page Centering */
+.auth-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Form Container Styling */
+.auth-form-wrapper {
+  width: 350px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.auth-form-container h2 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #172b4d; /* A dark blue-gray */
+  font-size: 1.5rem;
+}
+
+/* Form Group Styling (label + input) */
+.form-group {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #5e6c84; /* A medium gray */
+  font-size: 0.875rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 2px solid #dfe1e6;
+  border-radius: 6px;
+  box-sizing: border-box; /* Important for consistent sizing */
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Button Styling */
+button {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Link to toggle between Login/Register */
+.toggle-auth-button {
+  margin-top: 1.5rem;
+  border: none;
+  background: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.toggle-auth-button:hover {
+  text-decoration: underline;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+} 
